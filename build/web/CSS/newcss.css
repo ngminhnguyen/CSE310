@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,400;1,600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-image: url(image/login.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 110vh;
+    background: rgha(39, 39, 39, 0.4);
+}
+.nav{
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    background: lightsalmon(rgba(39, 39, 39, 0.6), transparent);
+    z-index: 100;
+}
+.nav-logo p{
+    font-size: 36px;
+    text-align: center;
+    color: #a86554;
+}
+.nav-menu ul{
+    display: flex;
+}
+.nav-menu ul li{
+    list-style-type: none;
+}
+.nav-menu ul li .link{
+    text-decoration: none;
+    font-weight: 500;
+    color: brown;
+    padding-bottom: 15px;
+    margin: 0 25px;
+}
+.link:hover, .active{
+    border-bottom: 2px solid brown;
+}
+.nav-button .btn{
+    width: 130px;
+    height: 40px;
+    font-weight: 500;
+    background: rgba(255, 255, 255, 0.4);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+#registerBtn{
+    margin-left: 15px;
+}
+.btn.white-btn{
+    background: rgba(255, 255, 255, 2);
+}
+.btn:hover{
+    background: rgba(255, 255, 255, 0.7);
+}
+.btn.white-btn:hover{
+    background: rgba(255, 255, 255, 0.5);
+}
+.nav-menu-btn{
+    display: none;
+}
+
+.form-box{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0 , 0, 0, .2);
+    color: #fff;
+    border-radius: 10px;
+    padding: 20px 30px;
+}
+.login-container{
+    position: absolute;
+    padding: 50px 70px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    transition: .5s ease-in-out;
+
+}
+.top span{
+    color: brown;
+    font-size: small;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+.top span a{
+    font-weight: 500;
+    color: brown;
+    margin-left: 5px;
+}
+header{
+    color: brown;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px 0 30px 0;
+}
+.type-account{
+    color: brown;
+
+}
+.labelAcc {
+    font-size: 1.2em;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    gap: 10px;
+}
+.cbbType{
+    padding: 20px;
+    font-size: 1.1em;
+    border: 2px solid brown;
+    
+}
+
+.labelAccType {
+    display: contents;
+    padding: 5px;
+
+}
+.labelAccType label+label{
+    margin-left: 160px;
+}
+.option select+select{
+    margin-top: 10px;
+    margin-left: 30px;
+}
+.option select{
+
+    font-size: 15px;
+    color: brown;
+    height: 50px;
+    width: 250px;
+    padding: 0 10px 0 45px;
+    border-radius: 20px;
+}
+.personal{
+    margin-top: 10px;
+    padding: 20px;
+    /*    font-size: 1.1em;*/
+    border: 2px solid brown;
+}
+.p{
+    font-size: 1em;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    gap: 10px;
+    color: brown;
+}
+.nameAIndtification label +label{
+    margin-left: 160px;
+}
+.nameAIndtification label{
+    font-size: 1.1em;
+    color: brown;
+}
+.nameAIndtification input{
+    /*    background: #a86554;*/
+    color: brown;
+    display: flex;
+    font-size: 17px;
+    height: 50px;
+    width: 250px;
+    padding: 0 10px 0 45px;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+}
+
+
